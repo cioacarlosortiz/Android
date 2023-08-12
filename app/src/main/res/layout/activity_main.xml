@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtconsulta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingrese la id para consultar"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnconsulta"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/lupa"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnactualizar"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/actualizado"
+            android:drawableTint="#FFFFFF"
+            app:rippleColor="@color/white"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btneliminar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/eliminar" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="26dp" />
+
+    <EditText
+        android:id="@+id/txttitulo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Titulo" />
+
+    <EditText
+        android:id="@+id/txtartista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Artista" />
+
+    <EditText
+        android:id="@+id/txtduracion"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Duracion" />
+
+    <EditText
+        android:id="@+id/txtaudioPath"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:hint="Ruta" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnSelectAudio"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/buscarcarchivos"
+            android:onClick="selectAudio" />
+
+        <Button
+            android:id="@+id/btnguardar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/disquete"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnlista"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/portapapeles" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnrepro"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Reproductor" />
+
+</LinearLayout>
+
+
